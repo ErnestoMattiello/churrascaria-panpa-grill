@@ -1,0 +1,90 @@
+/* Estilos gerais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+
+    font-family: 'poppins', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("imagem.webp");
+    backdrop-filter: brightness(35%);  /* Cor de fundo escura */
+    color: #fff;  /* Cor do texto */
+    margin: 0;
+    padding: 0;  /* Alinha o conteúdo centralizado verticalmente */
+    height: 110vh; /* Altura da tela inteira */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #6f0b00;  /* Cor vermelha escura */
+}
+
+.navbar a.nav-link {
+    color: #fff !important;
+}
+
+.navbar a.nav-link:hover {
+    color: #c9b849 !important;  /* Cor amarela dourada no hover */
+}
+
+/* Centralizando o formulário */
+form {
+    background-color: rgba(201, 104, 35, 0.7);  /* Cor laranja escuro com leve transparência */
+    padding: 30px;
+    border-radius: 8px;
+
+    width: 100%;  /* Largura de 100% da área disponível no contêiner */
+    max-width: 500px;  /* Largura máxima de 500px */
+    margin-left: 15%; /* Centraliza o formulário horizontalmente */
+    
+    
+
+}
+
+/* Inputs */
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"] {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 95%;  /* Faz os inputs ocuparem toda a largura disponível */
+    margin-bottom: 15px;  /* Espaçamento inferior */
+}
+
+/* Botões */
+button[type="submit"] {
+    background-color: #be3100;  /* Cor vermelha forte */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;  /* Faz o botão ocupar toda a largura */
+}
+
+button[type="submit"]:hover {
+    background-color: #6f0b00;  /* Cor vermelha escura no hover */
+}
+
+/* Texto do título */
+h2 {
+    color: #c9b849;  /* Cor amarela dourada no título */
+}
+.titulo{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+h1{
+
+color:white;
+
+}
+label{
+
+    color: white;
+
+}

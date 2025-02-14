@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    position: relative;
+    height: 100vh; /* Altura da seção */
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Coloca o conteúdo acima do vídeo */
+    color: #c96823;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    height: 100px;
+    color: #c96823;
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça os itens */
+    padding: 0 20px; /* Adiciona padding lateral */
+}
+
+.header-left {
+    display: flex; /* Agrupar logo e título */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.header-right {
+    display: flex; /* Agrupar search e buttons */
+    align-items: center; /* Centraliza verticalmente */
+    margin-left: auto; /* Move para o lado direito */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('../img/hero-image.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.menu-section {
+    text-align: center; /* Centraliza o texto */
+    padding: 40px;
+    background-image: url('../img/2 atualizado.png'); /* Corrigido o caminho */
+}
+
+span {
+    text-align: justify;
+}
+
+.menu-item {
+    display: inline-block; /* Permite que os itens fiquem lado a lado */
+    margin: 20px;
+    width: 300px; /* Largura fixa para garantir que todos os itens tenham o mesmo tamanho */
+    text-align: center; /* Centraliza o texto dentro do item */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
+.menu-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 200px; /* Define uma altura máxima para as imagens */
+    object-fit: cover; /* Corta a imagem para preencher o espaço sem distorção */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do item no hover */
+}
+
+.menu-item:hover .menu-image {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem no hover */
+}
+
+.menu-item h3 {
+    margin: 10px;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

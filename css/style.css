@@ -1,0 +1,338 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    height: 100px;
+    color: #c96823;
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça os itens */
+    padding: 0 20px; /* Adiciona padding lateral */
+}
+
+.header-left {
+    display: flex; /* Agrupar logo e título */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.header-right {
+    display: flex; /* Agrupar search e buttons */
+    align-items: center; /* Centraliza verticalmente */
+    margin-left: auto; /* Move para o lado direito */
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: black;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: black;
+}
+
+.produto {
+    margin: 20px 0;
+}
+
+.produto img {
+    max-width: 100px;
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #2f6931;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.history-section {
+    padding: 40px;
+    background-color: #f8f9fa; /* Fundo claro */
+    color: #c9b849; /* Cor do texto */
+    text-align: center;
+    background-image: url('../img/1 atualizado.png');
+}
+
+.history-section h2 {
+    color: #c9b849; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+.history-section p {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.rover-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #000000; /* Fundo claro */
+    background-image: url('../img/2 atualizado.png');
+}
+
+.rover-item {
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+    overflow: hidden; /* Esconde o excesso de conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.rover-image {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+.rover-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: white;
+    padding: 10px;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.3s; /* Transição suave */
+}
+
+
+
+
+.rover-item:hover .rover-info {
+    opacity: 1; /* Torna visível ao passar o mouse */
+}
+
+.parallax {
+    background-image: url('../img/paralax.webp'); /* Substitua pelo caminho da sua imagem */
+    height: 400px; /* Altura do parallax */
+    background-attachment: fixed; /* Efeito parallax */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o elemento */
+    text-decoration: none;
+    color: rgb(4, 0, 0);
+    padding: 0px;
+}
+
+.parallax a{
+    text-decoration: none;
+    color: rgb(12, 1, 1);
+}
+
+.custom-section {
+    height: 100%; /* Preenche a altura do parallax */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.contato {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: auto;
+    background-image: url('../img/1 atualizado.png');
+    color: #c9b849;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato .contact-container input,
+.contato .contact-container select,
+.contato .contact-container textarea {
+    background-color: #c96823;
+}
+
+.contact-container ::placeholder{
+    color: white;
+}
+
+label {
+    color: white; 
+}
+
+select {
+    background-color:rgb(6, 6, 6); 
+    color: white;
+    border: 1px solid #555; 
+}
+
+select option {
+    color: black; 
+}
+
+select {
+    color: white;
+  }
+  
+  select option {
+    color: #333;
+  }
+  
+  option[value=""][disabled] {
+    display: none;
+  }
+
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    background: none;
+    padding: 10px;
+    background-color: transparent;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #be3100;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #c96823;
+}
+
+.contact-info {
+    background-image: url('../img/2 atualizado.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #c9b849;
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* Remove margens externas */
+    border: none; /* Remove bordas */
+}
+
+.row {
+    display: flex; /* Flexbox para alinhar as colunas */
+    justify-content: center; /* Centraliza as colunas */
+}
+
+.location {
+    margin-bottom: 0; /* Remove margens inferiores */
+    padding: 10px; /* Ajuste o padding conforme necessário */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px; /* Ajuste o padding conforme necessário */
+    background-color: #333;
+    margin: 0; /* Remove margens externas */
+    border-top: none; /* Remove a borda superior, se houver */
+}
+
+/* Remove margens de outros elementos que possam estar afetando o footer */
+.contact-info, .teste, .contato {
+    margin: 0; /* Remove margens superiores e inferiores */
+    padding: 0; /* Remove padding, se houver */
+}
+
+/* Remove margens de títulos e parágrafos */
+h1, h3, p {
+    margin: 0; /* Remove margens de títulos e parágrafos */
+}
+
+/* Tente também ajustar a margem do body */
+body {
+    margin: 0; /* Remove margens do corpo */
+}
+
+/* Se necessário, ajuste a margem do container principal */
+.custom-section {
+    margin-bottom: 0; /* Remove margens inferiores */
+}
+
+/* Por fim, use uma regra mais específica se necessário */
+.contact-info > .row, .contato {
+    margin-bottom: 0; /* Remove margens inferiores especificamente */
+}
+
+.parallax {
+    background-image: url('../img/paralax.webp'); /* Insira o caminho da sua imagem */
+    height: 400px; /* Altura da div */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto rola */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; /* Cobre toda a área da div */
+    display: flex; /* Para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
